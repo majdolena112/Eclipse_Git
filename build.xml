@@ -1,6 +1,6 @@
 <project default="compile"> 
 
-       <property name="src.java.dir" location ="./Eclips_Git/src/main/java"/>  
+       <property name="src.java.dir" location ="./Eclips_Git/src/java"/>  
  <!--          <property name="src.test.dir"      location ="./src/main/test"/> --> 
          <property name="src.dir"     location="src"/> 
          <property name="result.dir"      location ="./target"/> 
