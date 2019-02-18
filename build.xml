@@ -1,6 +1,6 @@
 <project default="compile"> 
 
-       <property name="src.java.dir" location ="./Eclipse_Git/src/main/java"/>  
+       <property name="src.java.dir" location ="./Eclipse_Git/src/java"/>  
  <!--          <property name="src.test.dir"      location ="./src/main/test"/> --> 
          <property name="src.dir" location="src"/> 
          <property name="result.dir"      location ="./target"/> 
@@ -10,9 +10,9 @@
           
          <target name="compile"> 
                  <mkdir dir="${result.javaclasses.dir}"/> 
-                 <javac srcdir="${src.dir}" destdir="${result.javaclasses.dir}"> 
+                 <javac srcdir="${src.dir}" destdir="${result.javaclasses.dir}"/> 
 <!--            <javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true"  includeantruntime="false">   -->
-                </javac>  
+<!--                 </javac>   -->
               </target> 
                   
           
