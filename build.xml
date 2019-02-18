@@ -1,22 +1,27 @@
-<project default="compile">
-
-<property name="src.java.dir" location="./Eclips_Git/src/main/java"/>
-<!-- <property name="src.test.dir" location="./src/main/test"/> -->
-<property name="result.dir" location="./targets"/>
-<property name="result.javaclasses.dir" location="${result.dir}/classes"/>
-<!-- <property name="result.testclasses.dir"  location="${result.dir}/testclasses"/> -->
-<property name="result.jar.file" location="./MyProject.jar"/>
-
-<target name="compile">
-<mkdir dir="${result.javaclasses.dir}"/>
-<javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}"> 
- </javac>
-</target>
-
-<target name="jar" depends="compile">
-         <jar destfile="${result.jar.file}">
-              <fileset dir="${result.javaclasses.dir}">
-            </fileset>
-                </jar>
-            </target>
- </project>
+<project default="compile"> 
+2 
+ 
+3         <property name="src.java.dir" location ="./Eclips_Git/src/main/java"/>  
+4 <!--          <property name="src.test.dir"      location ="./src/main/test"/> --> 
+5         <property name="src.dir"     location="src"/> 
+6         <property name="result.dir"      location ="./target"/> 
+7          <property name="result.javaclasses.dir"   location ="${result.dir}/classes"/> 
+8          <property name="result.testclasses.dir"   location ="${result.dir}/testclasses"/> 
+9           <property name="result.jar.file" location ="./MyProduct.jar"/> 
+10          
+11         <target name="compile"> 
+12                 <mkdir dir="${result.javaclasses.dir}"/> 
+13                 <javac srcdir="${src.dir}" destdir="${result.javaclasses.dir}"> 
+14 <!--           <javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true"  includeantruntime="false">  --> 
+15                </javac>  
+16              </target> 
+17                  
+18          
+19         <target name="jar" depends="compile"> 
+20                  <jar destfile="${result.jar.file}"> 
+21                              <fileset dir="${result.javaclasses.dir}"> 
+22          
+23                   </fileset> 
+24                          </jar> 
+25                 </target> 
+26                 </project> 
